@@ -1,7 +1,17 @@
+<script>
+	import Desktop from './Desktop.svelte';
+</script>
+
 <svelte:head>
 	<title>Operating System</title>
 	<meta name="description" content="A website that simulates a fictional operating system" />
 </svelte:head>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Desktop />
+
+<style>
+	:global(body) {
+		background-color: #000000;
+		color: #ffffff;
+	}
+</style>
