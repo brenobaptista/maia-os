@@ -11,3 +11,14 @@
 		{file.name}
 	</button>
 {/each}
+
+<style>
+	button {
+		border-color: transparent;
+		background-color: transparent;
+		color: inherit;
+	}
+	button:hover {
+		background-color: var(--color-primary);
+	}
+</style>

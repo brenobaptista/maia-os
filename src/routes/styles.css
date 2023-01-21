@@ -1,0 +1,52 @@
+:root {
+	--color-primary: #bd93f9;
+	--color-text: #eaeaea;
+	--color-background: #282a36;
+	--color-alt-background: #44475a;
+}
+
+html {
+	color: var(--color-text);
+	background-color: var(--color-background);
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+::selection {
+	color: var(--color-background);
+	background-color: var(--color-primary);
+}
+
+/* Custom scrollbar on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-primary) var(--color-alt-background);
+}
+/* Custom scrollbar on Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	width: 6px;
+}
+*::-webkit-scrollbar-track {
+	background-color: var(--color-alt-background);
+}
+*::-webkit-scrollbar-thumb {
+	background-color: var(--color-primary);
+}

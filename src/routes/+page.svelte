@@ -1,5 +1,6 @@
 <script>
 	import Desktop from './Desktop.svelte';
+	import './styles.css';
 </script>
 
 <svelte:head>
@@ -8,10 +9,3 @@
 </svelte:head>
 
 <Desktop />
-
-<style>
-	:global(body) {
-		background-color: #000000;
-		color: #ffffff;
-	}
-</style>
