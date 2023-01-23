@@ -11,8 +11,8 @@
 		<button on:click={() => console.log(file.name)}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="72"
-				height="72"
+				width="75"
+				height="75"
 				viewBox="0 0 24 24"
 				fill="none"
 				stroke="currentColor"
@@ -25,7 +25,7 @@
 				<line x1="16" y1="17" x2="8" y2="17" />
 				<polyline points="10 9 9 9 8 9" />
 			</svg>
-			<div>
+			<div class="file-name">
 				{file.name}
 			</div>
 		</button>
@@ -44,11 +44,22 @@
 	}
 
 	button {
+		width: 150px;
+		height: 120px;
 		border-color: transparent;
 		background-color: transparent;
 		color: inherit;
+		border-radius: 0.5rem;
+		transition: background-color 0.1s ease-in-out;
 	}
 	button:hover {
-		background-color: var(--color-primary);
+		background-color: var(--color-alt-background);
+	}
+	button:focus {
+		background-color: var(--color-alt-background);
+	}
+
+	.file-name {
+		word-break: break-word;
 	}
 </style>
