@@ -55,9 +55,6 @@
 	button:hover {
 		background-color: var(--color-alt-background);
 	}
-	button:focus {
-		background-color: var(--color-alt-background);
-	}
 
 	.file-name {
 		word-break: break-word;
