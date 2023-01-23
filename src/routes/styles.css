@@ -43,9 +43,6 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-a:focus {
-	text-decoration: underline;
-}
 
 ::selection {
 	color: var(--color-background);
