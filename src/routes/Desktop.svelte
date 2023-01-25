@@ -1,9 +1,5 @@
 <script>
-	let files = [
-		{ name: 'placeholder.txt' },
-		{ name: 'placeholder2.txt' },
-		{ name: 'placeholder3.txt' }
-	];
+	import { files } from './files.js';
 </script>
 
 <div class="desktop">
