@@ -53,7 +53,7 @@
 		transition: background-color 0.1s ease-in-out;
 	}
 	button:hover {
-		background-color: var(--color-alt-background);
+		background-color: var(--color-bg-light);
 	}
 
 	.file-name {

@@ -1,8 +1,8 @@
 :root {
-	--color-primary: #bd93f9;
 	--color-text: #eaeaea;
-	--color-background: #282a36;
-	--color-alt-background: #44475a;
+	--color-bg: #282a36;
+	--color-bg-light: #44475a;
+	--color-bg-dark: #15171b;
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 html {
 	color: var(--color-text);
-	background-color: var(--color-background);
+	background-color: var(--color-bg);
 	scroll-behavior: smooth;
 }
 
@@ -45,21 +45,21 @@ a:hover {
 }
 
 ::selection {
-	color: var(--color-background);
+	color: var(--color-bg);
 	background-color: var(--color-primary);
 }
 
 /* Custom scrollbar on Firefox */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: var(--color-primary) var(--color-alt-background);
+	scrollbar-color: var(--color-primary) var(--color-bg-light);
 }
 /* Custom scrollbar on Chrome, Edge and Safari */
 *::-webkit-scrollbar {
 	width: 6px;
 }
 *::-webkit-scrollbar-track {
-	background-color: var(--color-alt-background);
+	background-color: var(--color-bg-light);
 }
 *::-webkit-scrollbar-thumb {
 	background-color: var(--color-primary);
