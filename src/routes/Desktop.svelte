@@ -1,10 +1,15 @@
 <script>
 	import { files } from './files.js';
+	import { openedFile } from './stores.js';
+
+	const setOpenedFile = (filePosition) => {
+		openedFile.set(filePosition);
+	};
 </script>
 
 <div class="desktop">
 	{#each files as file}
-		<button on:click={() => console.log(file.name)}>
+		<button on:click={() => setOpenedFile(files.indexOf(file))}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="75"
