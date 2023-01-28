@@ -15,7 +15,7 @@
 	.taskbar {
 		display: flex;
 		justify-content: center;
-		background-color: var(--color-bg-dark);
+		background-color: var(--nord16);
 		padding: 0.5rem;
 	}
 </style>

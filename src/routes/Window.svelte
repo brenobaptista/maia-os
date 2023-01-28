@@ -6,20 +6,28 @@
 {#if $openedFile !== null}
 	<div class="window">
 		<div class="title-bar">{files[$openedFile]?.name}</div>
+		<div class="content" />
 	</div>
 {/if}
 
 <style>
 	.window {
 		max-width: 320px;
-		height: 240px;
-		background-color: var(--color-bg-light);
+		border: 1px solid var(--nord16);
+		border-radius: 0.5rem;
 	}
 
 	.title-bar {
 		display: flex;
 		justify-content: center;
-		background-color: var(--color-bg-dark);
+		background-color: var(--nord1);
 		padding: 0.5rem;
+		border-radius: 0.5rem 0.5rem 0 0;
+	}
+
+	.content {
+		height: 240px;
+		background-color: var(--nord0);
+		border-radius: 0 0 0.5rem 0.5rem;
 	}
 </style>
