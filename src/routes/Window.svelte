@@ -12,9 +12,13 @@
 
 <style>
 	.window {
-		max-width: 320px;
+		width: 320px;
 		border: 1px solid var(--nord16);
 		border-radius: 0.5rem;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.title-bar {
