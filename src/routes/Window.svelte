@@ -4,18 +4,16 @@
 	import { openedFile } from './stores.js';
 </script>
 
-{#if $openedFile !== null}
-	<div class="window">
-		<div class="title-bar">
-			<div class="title-icon">
-				<FileText width={13} height={13} />
-				<div>{files[$openedFile]?.name}</div>
-			</div>
-			<button id="quit" class="button" on:click={() => openedFile.set(null)} />
+<div class="window" class:window-open={$openedFile !== null}>
+	<div class="title-bar">
+		<div class="title-icon">
+			<FileText width={13} height={13} />
+			<div>{files[$openedFile]?.name ?? ''}</div>
 		</div>
-		<div class="content" />
+		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
 	</div>
-{/if}
+	<div class="content" />
+</div>
 
 <style>
 	.window {
@@ -27,6 +25,11 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity 0.1s ease-out;
+	}
+	.window-open {
+		opacity: 1;
 	}
 
 	.title-bar {
