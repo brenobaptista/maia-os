@@ -1,4 +1,4 @@
-# Operating System
+# Maia!_OS
 
 > A website that simulates a fictional operating system
 
