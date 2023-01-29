@@ -15,6 +15,7 @@
 		width: 320px;
 		border: 1px solid var(--nord16);
 		border-radius: 0.5rem;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
 		position: absolute;
 		left: 50%;
 		top: 50%;
