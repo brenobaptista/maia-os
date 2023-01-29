@@ -1,4 +1,5 @@
 <script>
+	import FileText from './FileText.svelte';
 	import { files } from './files.js';
 	import { openedFile } from './stores.js';
 </script>
@@ -6,7 +7,10 @@
 {#if $openedFile !== null}
 	<div class="window">
 		<div class="title-bar">
-			<span class="title">{files[$openedFile]?.name}</span>
+			<div class="title-icon">
+				<FileText width={13} height={13} />
+				<div>{files[$openedFile]?.name}</div>
+			</div>
 			<button id="quit" class="button" on:click={() => openedFile.set(null)} />
 		</div>
 		<div class="content" />
@@ -35,9 +39,9 @@
 		border-radius: 0.5rem 0.5rem 0 0;
 	}
 
-	.title {
-		overflow: hidden;
-		text-overflow: ellipsis;
+	.title-icon {
+		display: flex;
+		gap: 0.5rem;
 	}
 
 	.button {
