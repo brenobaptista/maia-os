@@ -33,7 +33,7 @@
 		background-color: transparent;
 		color: inherit;
 		border-radius: 0.5rem;
-		transition: background-color 0.1s ease-in-out;
+		transition: background-color 0.1s ease-out;
 	}
 	button:hover {
 		border: 1px solid var(--nord16);
