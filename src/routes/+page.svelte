@@ -1,8 +1,8 @@
 <script>
-	import Taskbar from './Taskbar.svelte';
-	import Desktop from './Desktop.svelte';
-	import Window from './Window.svelte';
-	import './styles.css';
+	import Taskbar from '$lib/Taskbar.svelte';
+	import Desktop from '$lib/Desktop.svelte';
+	import Window from '$lib/Window.svelte';
+	import '$lib/styles.css';
 </script>
 
 <svelte:head>

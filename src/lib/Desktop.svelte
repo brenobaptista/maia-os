@@ -1,7 +1,6 @@
 <script>
-	import FileText from './FileText.svelte';
-	import { files } from './files.js';
-	import { openedFile } from './stores.js';
+	import FileText from './icons/FileText.svelte';
+	import { files, openedFile } from './stores/files';
 </script>
 
 <div class="desktop">

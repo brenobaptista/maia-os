@@ -1,5 +1,5 @@
 <script>
-	import { time } from './stores.js';
+	import { time } from './stores/time';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		weekday: 'short',

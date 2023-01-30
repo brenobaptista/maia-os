@@ -1,4 +1,4 @@
-import { readable, writable } from 'svelte/store';
+import { readable } from 'svelte/store';
 
 export const time = readable(new Date(), function start(set) {
 	const interval = setInterval(() => {
@@ -9,5 +9,3 @@ export const time = readable(new Date(), function start(set) {
 		clearInterval(interval);
 	};
 });
-
-export const openedFile = writable(null);
