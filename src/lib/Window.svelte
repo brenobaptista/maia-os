@@ -11,7 +11,7 @@
 		</div>
 		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
 	</div>
-	<div class="content" />
+	<div class="content">{files[$openedFile]?.content ?? ''}</div>
 </div>
 
 <style>
@@ -61,8 +61,9 @@
 	}
 
 	.content {
-		height: 240px;
+		height: 200px;
 		background-color: var(--nord0);
 		border-radius: 0 0 0.5rem 0.5rem;
+		padding: 0.5rem;
 	}
 </style>
