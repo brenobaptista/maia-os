@@ -64,3 +64,16 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+/* Custom scrollbar on Firefox */
+* {
+	scrollbar-color: var(--nord1) var(--nord0);
+}
+/* Custom scrollbar on Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: var(--nord1);
+	border: 2px solid var(--nord0);
+}
