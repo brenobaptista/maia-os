@@ -1,12 +1,12 @@
 <script>
-	import FileText from './icons/FileText.svelte';
+	import Icon from './Icon.svelte';
 	import { files, openedFile } from './stores/files';
 </script>
 
 <div class="desktop">
 	{#each files as file}
 		<button on:dblclick={() => openedFile.set(files.indexOf(file))}>
-			<FileText width={72} height={72} />
+			<Icon name={file.icon} width={72} height={72} />
 			<div class="file-name">
 				{file.name}
 			</div>

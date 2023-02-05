@@ -1,9 +1,9 @@
 <script>
-	import Logo from './icons/Logo.svelte';
+	import Icon from './Icon.svelte';
 </script>
 
 <div class="wallpaper">
-	<Logo width={240} height={240} />
+	<Icon name="logo" width={240} height={240} />
 </div>
 
 <style>

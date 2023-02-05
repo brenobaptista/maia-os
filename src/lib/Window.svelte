@@ -1,12 +1,12 @@
 <script>
-	import FileText from './icons/FileText.svelte';
+	import Icon from './Icon.svelte';
 	import { files, openedFile } from './stores/files';
 </script>
 
 <div class="window" class:window-open={$openedFile !== null}>
 	<div class="title-bar">
 		<div class="title-icon">
-			<FileText width={13} height={13} />
+			<Icon name={files[$openedFile]?.icon} width={13} height={13} />
 			<div>{files[$openedFile]?.name ?? ''}</div>
 		</div>
 		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
