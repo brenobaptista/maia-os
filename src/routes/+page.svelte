@@ -1,6 +1,7 @@
 <script>
 	import Taskbar from '$lib/Taskbar.svelte';
 	import Desktop from '$lib/Desktop.svelte';
+	import Wallpaper from '$lib/Wallpaper.svelte';
 	import Window from '$lib/Window.svelte';
 	import '$lib/styles.css';
 </script>
@@ -12,4 +13,5 @@
 
 <Taskbar />
 <Desktop />
+<Wallpaper />
 <Window />
