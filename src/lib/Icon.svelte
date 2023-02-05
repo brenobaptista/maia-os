@@ -1,5 +1,6 @@
 <script>
 	import FileText from './icons/FileText.svelte';
+	import Heart from './icons/Heart.svelte';
 	import Logo from './icons/Logo.svelte';
 
 	export let name;
@@ -11,4 +12,6 @@
 	<FileText {width} {height} />
 {:else if name === 'logo'}
 	<Logo {width} {height} />
+{:else if name === 'heart'}
+	<Heart {width} {height} />
 {/if}
