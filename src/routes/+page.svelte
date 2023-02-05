@@ -11,6 +11,8 @@
 	<meta name="description" content="A website that simulates a fictional operating system" />
 </svelte:head>
 
+<svelte:body on:contextmenu={(e) => e.preventDefault()} />
+
 <Taskbar />
 <Desktop />
 <Wallpaper />
