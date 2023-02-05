@@ -38,6 +38,10 @@
 		border: 1px solid var(--nord16);
 		background-color: var(--nord1);
 	}
+	button:focus {
+		border: 1px solid var(--nord16);
+		background-color: var(--nord3);
+	}
 
 	.file-name {
 		word-break: break-word;
