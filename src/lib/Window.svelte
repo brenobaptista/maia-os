@@ -1,17 +1,20 @@
 <script>
 	import Icon from './Icon.svelte';
+	import Page from './Page.svelte';
 	import { files, openedFile } from './stores/files';
 </script>
 
 <div class="window" class:window-open={$openedFile !== null}>
 	<div class="title-bar">
 		<div class="title-icon">
-			<Icon name={files[$openedFile]?.icon} width={13} height={13} />
+			<Icon name={files[$openedFile]?.icon ?? ''} width={13} height={13} />
 			<div>{files[$openedFile]?.name ?? ''}</div>
 		</div>
 		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
 	</div>
-	<div class="content">{files[$openedFile]?.content ?? ''}</div>
+	<div class="content">
+		<Page name={files[$openedFile]?.content ?? ''} />
+	</div>
 </div>
 
 <style>

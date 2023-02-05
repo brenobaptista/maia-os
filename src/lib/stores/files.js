@@ -4,7 +4,7 @@ export const files = [
 	{
 		name: 'README.txt',
 		icon: 'file-text',
-		content: 'This is a website that simulates a fictional operating system.'
+		content: 'readme'
 	}
 ];
 
