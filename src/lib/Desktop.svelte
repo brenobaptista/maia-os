@@ -5,7 +5,7 @@
 
 <div class="desktop">
 	{#each files as file}
-		<button on:click={() => openedFile.set(files.indexOf(file))}>
+		<button on:dblclick={() => openedFile.set(files.indexOf(file))}>
 			<FileText width={72} height={72} />
 			<div class="file-name">
 				{file.name}
