@@ -1,11 +1,16 @@
 <script>
 	import Icon from './Icon.svelte';
 	import { files, openedFile } from './stores/files';
+
+	const setOpenedFile = (file) => {
+		const fileIndex = files.indexOf(file);
+		openedFile.set(fileIndex);
+	};
 </script>
 
 <div class="desktop">
 	{#each files as file}
-		<button on:dblclick={() => openedFile.set(files.indexOf(file))}>
+		<button on:touchend={() => setOpenedFile(file)} on:dblclick={() => setOpenedFile(file)}>
 			<Icon name={file.icon} width={72} height={72} />
 			<div class="file-name">
 				{file.name}
