@@ -27,12 +27,11 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 0;
-		transition: opacity 0.1s ease-out;
+		transform: translate(-50%, -50%) scale(0);
+		transition: transform 0.1s ease-out;
 	}
 	.window-open {
-		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
 	}
 
 	.title-bar {
@@ -53,7 +52,7 @@
 
 	.button {
 		border: 1px solid var(--nord16);
-		border-radius: 50%;
+		border-radius: 0.5rem;
 		width: 1rem;
 		height: 1rem;
 	}
