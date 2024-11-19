@@ -68,7 +68,6 @@
 		max-width: 300px;
 		background-color: var(--nord0);
 		border-radius: 0 0 0.5rem 0.5rem;
-		padding: 0.5rem;
 		overflow: auto;
 	}
 </style>
