@@ -78,6 +78,12 @@
 
 		.title-bar {
 			border-radius: 0;
+			padding: 1rem;
+		}
+
+		.button {
+			width: 1.3rem;
+			height: 1.3rem;
 		}
 
 		.content {
