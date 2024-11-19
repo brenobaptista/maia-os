@@ -19,7 +19,6 @@
 
 <style>
 	.window {
-		width: 320px;
 		border: 1px solid var(--nord16);
 		border-radius: 0.5rem;
 		background-color: var(--nord0);
@@ -66,6 +65,7 @@
 
 	.content {
 		height: 200px;
+		max-width: 300px;
 		background-color: var(--nord0);
 		border-radius: 0 0 0.5rem 0.5rem;
 		padding: 0.5rem;
