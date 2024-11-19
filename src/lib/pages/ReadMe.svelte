@@ -5,7 +5,8 @@
 <div class="container">
 	<h1>README</h1>
 	<p>This is a website that simulates a fictional operating system.</p>
-	<div>
+	<p>It is built with Svelte. The color palette is Nord.</p>
+	<div class="footer">
 		<span>© {new Date().getFullYear()} Maia!_OS. </span>
 		<span>
 			Made with
@@ -21,8 +22,12 @@
 <style>
 	.container {
 		padding: 0.5rem;
-		max-width: 300px;
-		height: 200px;
+		max-width: 390px;
+		height: 220px;
+	}
+
+	.footer {
+		padding-top: 1rem;
 	}
 
 	@media (max-width: 768px) {
