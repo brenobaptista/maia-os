@@ -21,5 +21,7 @@
 <style>
 	.container {
 		padding: 0.5rem;
+		max-width: 300px;
+		height: 200px;
 	}
 </style>
