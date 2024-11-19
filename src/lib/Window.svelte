@@ -68,4 +68,20 @@
 		background-color: var(--nord0);
 		border-radius: 0 0 0.5rem 0.5rem;
 	}
+
+	@media (max-width: 768px) {
+		.window {
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
+
+		.title-bar {
+			border-radius: 0;
+		}
+
+		.content {
+			border-radius: 0;
+		}
+	}
 </style>
