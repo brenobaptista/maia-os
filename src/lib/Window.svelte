@@ -13,7 +13,7 @@
 		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
 	</div>
 	<div class="content">
-		<Page name={files[$openedFile]?.content ?? ''} />
+		<Page name={files[$openedFile]?.content ?? ''} url={files[$openedFile]?.url ?? ''} />
 	</div>
 </div>
 
