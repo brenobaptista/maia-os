@@ -51,10 +51,10 @@
 
 	.button {
 		border: 1px solid var(--nord16);
-		border-radius: 0.5rem;
+		border-radius: 50%;
 		width: 1rem;
 		height: 1rem;
-		box-sizing: border-box;
+		padding: 0;
 	}
 
 	#quit {
