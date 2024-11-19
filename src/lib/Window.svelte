@@ -54,6 +54,7 @@
 		border-radius: 50%;
 		width: 1rem;
 		height: 1rem;
+		padding: 0;
 	}
 
 	#quit {
