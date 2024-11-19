@@ -1,4 +1,5 @@
 <script>
+	import RSS from './icons/RSS.svelte';
 	import FileText from './icons/FileText.svelte';
 	import Heart from './icons/Heart.svelte';
 	import Logo from './icons/Logo.svelte';
@@ -14,4 +15,6 @@
 	<Logo {width} {height} />
 {:else if name === 'heart'}
 	<Heart {width} {height} />
+{:else if name === 'rss'}
+	<RSS {width} {height} />
 {/if}
