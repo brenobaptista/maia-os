@@ -54,6 +54,7 @@
 		border-radius: 0.5rem;
 		width: 1rem;
 		height: 1rem;
+		box-sizing: border-box;
 	}
 
 	#quit {
