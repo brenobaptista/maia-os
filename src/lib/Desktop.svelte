@@ -31,7 +31,7 @@
 	}
 
 	button {
-		width: 150px;
+		width: 120px;
 		height: 120px;
 		border-color: transparent;
 		background-color: transparent;
