@@ -33,7 +33,7 @@
 	@media (max-width: 768px) {
 		.container {
 			max-width: 100%;
-			height: 100vh;
+			height: 100%;
 		}
 	}
 </style>
