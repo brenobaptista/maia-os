@@ -72,7 +72,7 @@
 	@media (max-width: 768px) {
 		.window {
 			width: 100%;
-			height: 100%;
+			height: 100vh;
 			border-radius: 0;
 		}
 
