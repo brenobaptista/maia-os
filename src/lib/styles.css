@@ -49,6 +49,8 @@ body {
 	font-family: 'Inter', sans-serif;
 	user-select: none;
 	font-size: 0.9rem;
+	overflow: hidden;
+	position: fixed;
 }
 
 input,
