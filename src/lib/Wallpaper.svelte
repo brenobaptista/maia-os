@@ -13,5 +13,6 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: var(--nord8);
+		z-index: -1;
 	}
 </style>
