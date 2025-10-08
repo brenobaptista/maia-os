@@ -43,12 +43,13 @@ html {
 }
 
 body {
-	height: 100vh;
+	height: 100dvh;
 	width: 100vw;
 	margin: 0;
 	font-family: 'Inter', sans-serif;
 	user-select: none;
 	font-size: 0.9rem;
+	overflow: hidden;
 }
 
 input,
