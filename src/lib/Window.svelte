@@ -10,7 +10,11 @@
 			<Icon name={files[$openedFile]?.icon ?? ''} width={16} height={16} />
 			<div>{files[$openedFile]?.name ?? ''}</div>
 		</div>
-		<button id="quit" class="button" on:click={() => openedFile.set(null)} />
+		<div class="buttons">
+			<button id="maximize" class="button" on:click={() => openedFile.set(null)} />
+			<button id="minimize" class="button" on:click={() => openedFile.set(null)} />
+			<button id="quit" class="button" on:click={() => openedFile.set(null)} />
+		</div>
 	</div>
 	<div class="content">
 		<Page name={files[$openedFile]?.content ?? ''} url={files[$openedFile]?.url ?? ''} />
@@ -49,6 +53,11 @@
 		align-items: center;
 	}
 
+	.buttons {
+		display: flex;
+		gap: 0.5rem;
+	}
+
 	.button {
 		border: 1px solid var(--nord16);
 		border-radius: 50%;
@@ -56,12 +65,18 @@
 		height: 1rem;
 		padding: 0;
 	}
+	button:hover {
+		filter: brightness(1.2);
+	}
 
 	#quit {
 		background-color: var(--nord11);
 	}
-	#quit:hover {
-		background-color: var(--nord12);
+	#minimize {
+		background-color: var(--nord13);
+	}
+	#maximize {
+		background-color: var(--nord14);
 	}
 
 	.content {
