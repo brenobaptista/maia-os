@@ -53,6 +53,11 @@
 		align-items: center;
 	}
 
+
+	.title-icon div {
+		padding-top: 3px;
+	}
+
 	.buttons {
 		display: flex;
 		gap: 0.5rem;
