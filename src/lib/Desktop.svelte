@@ -11,7 +11,7 @@
 <div class="desktop">
 	{#each files as file}
 		<button on:touchend={() => setOpenedFile(file)} on:dblclick={() => setOpenedFile(file)}>
-			<Icon name={file.icon} width={72} height={72} />
+			<Icon name={file.icon} width={60} height={60} />
 			<div class="file-name">
 				{file.name}
 			</div>
@@ -26,8 +26,8 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-content: flex-start;
-		gap: 1rem;
-		margin: 1rem;
+		gap: 2rem;
+		margin: 2rem;
 	}
 	@media (max-width: 768px) {
 		.desktop {
@@ -38,16 +38,17 @@
 			justify-content: center;
 			background-color: var(--nord16);
 			margin: 0;
+			padding: 0.5rem 0;
 		}
 	}
 
 	button {
-		width: 120px;
-		height: 120px;
+		width: 90px;
+		height: 90px;
 		border-color: transparent;
+		border-radius: 0.5rem;
 		background-color: transparent;
 		color: inherit;
-		border-radius: 0.5rem;
 		transition: background-color 0.1s ease-out;
 	}
 	button:hover {

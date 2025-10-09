@@ -8,7 +8,7 @@ export const files = [
 		url: 'https://brenobaptista.com/'
 	},
 	{
-		name: 'README.txt',
+		name: 'README',
 		icon: 'file-text',
 		content: 'readme'
 	},
