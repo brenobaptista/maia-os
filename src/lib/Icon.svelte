@@ -3,6 +3,7 @@
 	import FileText from './icons/FileText.svelte';
 	import Heart from './icons/Heart.svelte';
 	import Logo from './icons/Logo.svelte';
+	import Edit from './icons/Edit.svelte';
 
 	export let name;
 	export let width;
@@ -17,4 +18,6 @@
 	<Heart {width} {height} />
 {:else if name === 'rss'}
 	<RSS {width} {height} />
+{:else if name === 'edit'}
+	<Edit {width} {height} />
 {/if}

@@ -11,6 +11,11 @@ export const files = [
 		name: 'README.txt',
 		icon: 'file-text',
 		content: 'readme'
+	},
+	{
+		name: 'Notepad',
+		icon: 'edit',
+		content: 'notepad'
 	}
 ];
 

@@ -1,6 +1,7 @@
 <script>
 	import Iframe from './pages/Iframe.svelte';
 	import ReadMe from './pages/ReadMe.svelte';
+	import Notepad from './pages/Notepad.svelte';
 
 	export let name;
 	export let url;
@@ -10,4 +11,6 @@
 	<ReadMe />
 {:else if name === 'iframe'}
 	<Iframe {name} {url} />
+{:else if name === 'notepad'}
+	<Notepad />
 {/if}
