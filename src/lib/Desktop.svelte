@@ -29,6 +29,17 @@
 		gap: 1rem;
 		margin: 1rem;
 	}
+	@media (max-width: 768px) {
+		.desktop {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			flex-direction: row;
+			justify-content: center;
+			background-color: var(--nord16);
+			margin: 0;
+		}
+	}
 
 	button {
 		width: 120px;
@@ -50,17 +61,5 @@
 
 	.file-name {
 		word-break: break-word;
-	}
-
-	@media (max-width: 768px) {
-		.desktop {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			flex-direction: row;
-			justify-content: center;
-			background-color: var(--nord16);
-			margin: 0;
-		}
 	}
 </style>

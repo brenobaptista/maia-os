@@ -22,7 +22,6 @@
 		padding: 0.5rem;
 		font-weight: 700;
 	}
-
 	@media (max-width: 768px) {
 		.taskbar {
 			display: none;

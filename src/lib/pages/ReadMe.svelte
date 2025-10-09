@@ -25,15 +25,14 @@
 		max-width: 390px;
 		height: 220px;
 	}
-
-	.footer {
-		padding-top: 1rem;
-	}
-
 	@media (max-width: 768px) {
 		.container {
 			max-width: 100%;
 			height: 100%;
 		}
+	}
+
+	.footer {
+		padding-top: 1rem;
 	}
 </style>
