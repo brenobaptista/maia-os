@@ -1,23 +1,41 @@
 <script>
 	import Icon from './Icon.svelte';
 	import Page from './Page.svelte';
-	import { files, openedFile } from './stores/files';
+	import { files, openedFileState } from './stores/files.svelte.js';
 </script>
 
-<div class="window" class:window-open={$openedFile !== null}>
+<div class="window" class:window-open={openedFileState.value !== null}>
 	<div class="title-bar">
 		<div class="title-icon">
-			<Icon name={files[$openedFile]?.icon ?? ''} width={16} height={16} />
-			<div>{files[$openedFile]?.name ?? ''}</div>
+			<Icon name={files[openedFileState.value]?.icon ?? ''} width={16} height={16} />
+			<div>{files[openedFileState.value]?.name ?? ''}</div>
 		</div>
 		<div class="buttons">
-			<button id="maximize" class="button" on:click={() => openedFile.set(null)} />
-			<button id="minimize" class="button" on:click={() => openedFile.set(null)} />
-			<button id="quit" class="button" on:click={() => openedFile.set(null)} />
+			<button
+				id="maximize"
+				class="button"
+				onclick={() => (openedFileState.value = null)}
+				aria-label="Maximize window"
+			></button>
+			<button
+				id="minimize"
+				class="button"
+				onclick={() => (openedFileState.value = null)}
+				aria-label="Minimize window"
+			></button>
+			<button
+				id="quit"
+				class="button"
+				onclick={() => (openedFileState.value = null)}
+				aria-label="Close window"
+			></button>
 		</div>
 	</div>
 	<div class="content">
-		<Page name={files[$openedFile]?.content ?? ''} url={files[$openedFile]?.url ?? ''} />
+		<Page
+			name={files[openedFileState.value]?.content ?? ''}
+			url={files[openedFileState.value]?.url ?? ''}
+		/>
 	</div>
 </div>
 
@@ -52,7 +70,6 @@
 		gap: 0.5rem;
 		align-items: center;
 	}
-
 
 	.title-icon div {
 		padding-top: 3px;

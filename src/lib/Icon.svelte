@@ -5,9 +5,7 @@
 	import Logo from './icons/Logo.svelte';
 	import Edit from './icons/Edit.svelte';
 
-	export let name;
-	export let width;
-	export let height;
+	let { name, width, height } = $props();
 </script>
 
 {#if name === 'file-text'}

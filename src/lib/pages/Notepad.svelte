@@ -1,11 +1,14 @@
 <script>
-	import { writable } from 'svelte/store';
-
-	const content = writable('');
+	let content = $state('');
 </script>
 
 <div class="container">
-	<textarea id="notepad-content" name="notepad-content" bind:value={$content} placeholder="Click here and start typing..." />
+	<textarea
+		id="notepad-content"
+		name="notepad-content"
+		bind:value={content}
+		placeholder="Click here and start typing..."
+	></textarea>
 </div>
 
 <style>

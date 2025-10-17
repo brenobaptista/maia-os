@@ -1,5 +1,3 @@
-import { writable } from 'svelte/store';
-
 export const files = [
 	{
 		name: 'Blog',
@@ -19,4 +17,8 @@ export const files = [
 	}
 ];
 
-export const openedFile = writable(null);
+class OpenedFileState {
+	value = $state(null);
+}
+
+export const openedFileState = new OpenedFileState();

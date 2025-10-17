@@ -1,5 +1,5 @@
 <script>
-	import { time } from './stores/time';
+	import { time } from './stores/time.svelte.js';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		weekday: 'short',
@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="taskbar">{formatter.format($time).replace(/,/g, '')}</div>
+<div class="taskbar">{formatter.format(time.current).replace(/,/g, '')}</div>
 
 <style>
 	.taskbar {

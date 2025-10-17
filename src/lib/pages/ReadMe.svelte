@@ -11,7 +11,7 @@
 		<span>
 			Made with
 			<Icon name="heart" width={13} height={13} />
-			by{' '}
+			by
 			<a href="https://www.brenobaptista.com/" target="_blank" rel="noreferrer noopener">
 				Breno Baptista
 			</a>

@@ -4,6 +4,10 @@
 	import Wallpaper from '$lib/Wallpaper.svelte';
 	import Window from '$lib/Window.svelte';
 	import '$lib/styles.css';
+
+	function preventContextMenu(e) {
+		e.preventDefault();
+	}
 </script>
 
 <svelte:head>
@@ -11,7 +15,7 @@
 	<meta name="description" content="A website that simulates a fictional operating system" />
 </svelte:head>
 
-<svelte:body on:contextmenu={(e) => e.preventDefault()} />
+<svelte:body oncontextmenu={preventContextMenu} />
 
 <Taskbar />
 <Desktop />

@@ -3,8 +3,7 @@
 	import ReadMe from './pages/ReadMe.svelte';
 	import Notepad from './pages/Notepad.svelte';
 
-	export let name;
-	export let url;
+	let { name, url } = $props();
 </script>
 
 {#if name === 'readme'}

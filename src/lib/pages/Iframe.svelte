@@ -1,10 +1,9 @@
 <script>
-	export let name;
-	export let url;
+	let { name, url } = $props();
 </script>
 
 <div class="container">
-	<iframe title={name} src={url} class="iframe" />
+	<iframe title={name} src={url} class="iframe"></iframe>
 </div>
 
 <style>
