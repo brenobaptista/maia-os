@@ -2,24 +2,6 @@
 
 > A website that simulates a fictional operating system
 
-## pnpm
-
-### Installing pnpm
-
-This project is using `pnpm` as package manager. You can install it by simply enabling `Corepack` (ships with Node.js v16.13):
-
-```bash
-$ corepack enable
-```
-
-### Using pnpm
-
-| npm command   | pnpm equivalent |
-| ------------- | --------------- |
-| npm install   | pnpm install    |
-| npm i <pkg>   | pnpm add <pkg>  |
-| npm run <cmd> | pnpm <cmd>      |
-
 ## Getting Started
 
 ```
